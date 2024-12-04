@@ -30,6 +30,14 @@ int main(int argc, char** argv)
 int MinValue(const int* arr, int count)
 {
 	// TODO: loop through the array, return the smallest value
+	for (int i = 0; i < 10; ++i)
+	{
+		if ( i < count)
+		{
+			count = 
+		}
+	}
+	std::cout << MinValue << std::endl;
 	return 0;
 }
 
