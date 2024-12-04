@@ -4,6 +4,8 @@
 int main(int argc, char** argv)
 {
 	const int NUM_NUMBERS = 5;
+
+	// A stack array
 	int numbers[NUM_NUMBERS] = { 10, 20, 30, 40, 50 };
 
 	/* 
@@ -13,32 +15,11 @@ int main(int argc, char** argv)
 	*/
 	// Task1: Write your Code here
 	// ------------------------------------------------------------------------
-	//int[] PrintArray(int[] array)
-	//{
-	//	Console.WriteLine("Here are the numbers printed from the array.");
-	//	Console.WriteLine();
 
-	//	// for loop to read the playervalues and print them to the screen.
-	//	for (int i = 0; i < playerValues.Length; ++i)
-	//	{
-
-	//		Console.WriteLine(array[i] + " ");
-	//	}
-	//	return playerValues;
-	//}
-	//std::cout << "Player health is: " << playerHealth << std::endl;
 	std::cout << "Here is the printed version of the array: " << std::endl;
-	/*int[] PrintArray(int[] array)
+	for (int i = 0; i < 5; ++i)
 	{
-		for (int i = 0; i < NUM_NUMBERS.Length; ++i)
-		{
-			std::cout << array[i] + " " << std::endl;
-		}
-		return NUM_NUMBERS;
-	}*/
-	for (int i = 0; i < NUM_NUMBERS.Length; ++i)
-	{
-		std::cout << numbers[i] + " " << std::endl;
+		std::cout << numbers[i] << std::endl;
 	}
 	
 
@@ -53,8 +34,15 @@ int main(int argc, char** argv)
 
 	// Task 2: Write your Code here
 	// ------------------------------------------------------------------------
+	std::cout << std::endl;
+	std::cout << "Here is the array printed in reverse: " << std::endl;
+	for (int i = 5 - 1; i < 5; --i)
+	{
+		if (i == -1)
+			break;
 
-
+		std::cout << numbers[i] << std::endl;
+	}
 	// ------------------------------------------------------------------------
 
 	return 0;
