@@ -43,6 +43,7 @@ void SortArray(int* arr, int count)
 	{
 		for (int j = 0; j < count - i - 1; j++)
 		{
+			// Sorting through the values
 			if (arr[j] > arr[j + 1])
 			{
 				// making a temporary array equal to one of the values
